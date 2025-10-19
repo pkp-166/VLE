@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: demo-service
 spec:
-  type: LoadBalancer
+  type: ClusterIP   # use port-forward or NodePort in Kind
   selector:
     app: demo
-    version: green   # switch to green when testing rollout
+    version: blue   # 👈 switch between "blue" and "green"
   ports:
     - port: 80
       targetPort: 3000
