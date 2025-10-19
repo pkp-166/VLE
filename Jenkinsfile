@@ -2,14 +2,13 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_USER = "<your-dockerhub-username>"
-        DOCKERHUB_PASS = credentials('dockerhub-pass')   // we’ll add this in Jenkins credentials
+        DOCKERHUB_USER = "praneeth166"
     }
 
     stages {
         stage('Clone repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/<your-username>/<your-repo>.git'
+                git branch: 'main', url: 'https://github.com/pkp-166/VLE.git'
             }
         }
 
