@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: <your-dockerhub-username>/exp7-app:green
+        image: praneeth166/exp7-app:latest
         ports:
         - containerPort: 3000
 
