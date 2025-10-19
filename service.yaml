@@ -6,7 +6,7 @@ spec:
   type: ClusterIP   # use port-forward or NodePort in Kind
   selector:
     app: demo
-    version: blue   # 👈 switch between "blue" and "green"
+    version: green   # 👈 switch between "blue" and "green"
   ports:
     - port: 80
       targetPort: 3000
